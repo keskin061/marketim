@@ -4,6 +4,9 @@ import 'package:marketim/KuryeGiris.dart';
 import 'package:marketim/YoneticiGiris.dart';
 import 'yoneticiIslem.dart';
 import 'kuryeIslem.dart';
+import 'kullaniciIslem.dart';
+import 'loginUser.dart';
+//import 'yeniKullanici.dart';
 
 import 'GirisSayfa.dart';
 
@@ -31,6 +34,9 @@ class MyApp extends StatelessWidget {
         KuryeGiris.routeName: (context) => KuryeGiris(),
         yoneticiIslem.routeName: (context) => yoneticiIslem(),
         kuryeIslem.routeName: (context) => kuryeIslem(),
+        kullaniciIslem.routeName: (context) => kullaniciIslem(),
+        loginUser.routeName: (context) => loginUser(),
+        //y.routeName: (context) => kuryeIslem(),
       },
     );
   }
