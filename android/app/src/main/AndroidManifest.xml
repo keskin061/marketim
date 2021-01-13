@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.testo.marketim">
    <application
-        android:label="marketim"
+        android:label="Marketim"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

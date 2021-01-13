@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:marketim/KullaniciGiris.dart';
+import 'package:marketim/KuryeGiris.dart';
+import 'package:marketim/YoneticiGiris.dart';
+
+import 'GirisSayfa.dart';
 
 void main() {
   runApp(new MyApp());
@@ -8,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Generated App',
+      title: 'Marketim',
       theme: new ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
@@ -16,24 +21,13 @@ class MyApp extends StatelessWidget {
         accentColor: const Color(0xFF64ffda),
         canvasColor: const Color(0xFF303030),
       ),
-      home: new MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key}) : super(key: key);
-  @override
-  _MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Marketim'),
-      ),
+      initialRoute: GirisSayfa.routeName,
+      routes: {
+        GirisSayfa.routeName: (context) => GirisSayfa(),
+        YoneticiGiris.routeName: (context) => YoneticiGiris(),
+        KullaniciGiris.routeName: (context) => KullaniciGiris(),
+        KuryeGiris.routeName: (context) => KuryeGiris(),
+      },
     );
   }
 }
