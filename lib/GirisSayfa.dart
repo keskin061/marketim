@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:marketim/KullaniciGiris.dart';
+import 'package:marketim/KuryeGiris.dart';
 import 'package:marketim/YoneticiGiris.dart';
 
 class GirisSayfa extends StatefulWidget {
@@ -38,7 +39,7 @@ class _GirisSayfaState extends State<GirisSayfa> {
               RaisedButton(
                 child: Text('KURYECİ GİRİŞ'),
                 onPressed: () {
-                  Navigator.pushNamed(context, KullaniciGiris.routeName);
+                  Navigator.pushNamed(context, KuryeGiris.routeName);
                 },
               ),
             ],

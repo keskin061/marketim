@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:marketim/urunEkleme.dart';
+import 'package:marketim/yoneticiIslem.dart';
 
 class YoneticiGiris extends StatefulWidget {
   static String routeName = '/YoneticiGiris';
@@ -45,7 +45,7 @@ class _YoneticiGirisState extends State<YoneticiGiris> {
                 color: Colors.yellow,
                 child: Text('ENTER'),
                 onPressed: () {
-                  Navigator.pushNamed(context, urunEkleme.routeName);
+                  Navigator.pushNamed(context, yoneticiIslem.routeName);
                 },
               )
             ],

@@ -1,19 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'package:marketim/YoneticiGiris.dart';
+class yoneticiIslem extends StatefulWidget {
+  static String routeName = '/yoneticiIslem';
 
-
-
-class urunEkleme extends StatefulWidget {
-  static String routeName = '/urunEkleme';
-
-  urunEkleme({Key key}) : super(key: key);
+  yoneticiIslem({Key key}) : super(key: key);
   @override
-  _urunEklemeState createState() => new _urunEklemeState();
+  _yoneticiIslemState createState() => new _yoneticiIslemState();
 }
 
-class _urunEklemeState extends State<urunEkleme> {
+class _yoneticiIslemState extends State<yoneticiIslem> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
