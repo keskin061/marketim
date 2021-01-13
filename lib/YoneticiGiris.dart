@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:marketim/urunEkleme.dart';
 
 class YoneticiGiris extends StatefulWidget {
   static String routeName = '/YoneticiGiris';
@@ -16,15 +17,15 @@ class _YoneticiGirisState extends State<YoneticiGiris> {
       appBar: new AppBar(
         title: new Text("Yönecici Giriş"),
       ),
-      body: Container(
-        child: Center(
-          //padding: EdgeInsets.all(80.0),
+      body: Center (
+        child: Container(
+          padding: EdgeInsets.all(80.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 'Welcome',
-                style: Theme.of(context).textTheme.headline1,
+               // style: Theme.of(context).textTheme.headline1,
               ),
               TextFormField(
                 decoration: InputDecoration(
@@ -44,7 +45,7 @@ class _YoneticiGirisState extends State<YoneticiGiris> {
                 color: Colors.yellow,
                 child: Text('ENTER'),
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, '/catalog');
+                  Navigator.pushNamed(context, urunEkleme.routeName);
                 },
               )
             ],
