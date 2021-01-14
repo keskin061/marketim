@@ -1,40 +1,40 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:marketim/yoneticiIslem.dart';
+import 'package:marketim/kullaniciIslem.dart';
 
-class YoneticiGiris extends StatefulWidget {
-  static String routeName = '/YoneticiGiris';
+class kullaniciGiris extends StatefulWidget {
+  static String routeName = '/kullaniciGiris';
 
-  YoneticiGiris({Key key}) : super(key: key);
+  kullaniciGiris({Key key}) : super(key: key);
   @override
-  _YoneticiGirisState createState() => new _YoneticiGirisState();
+  _kullaniciGirisState createState() => new _kullaniciGirisState();
 }
 
-class _YoneticiGirisState extends State<YoneticiGiris> {
+class _kullaniciGirisState extends State<kullaniciGiris> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Yönecici Giriş"),
+        title: new Text("Kullanıcı Giriş"),
       ),
-      body: Center (
+      body: Center(
         child: Container(
           padding: EdgeInsets.all(80.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Welcome',
-               // style: Theme.of(context).textTheme.headline1,
+                'Hoşgeldiniz',
+                // style: Theme.of(context).textTheme.headline1,
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  hintText: 'Username',
+                  hintText: 'Kullanıcı Adı',
                 ),
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  hintText: 'Password',
+                  hintText: 'Şifre',
                 ),
                 obscureText: true,
               ),
@@ -43,9 +43,9 @@ class _YoneticiGirisState extends State<YoneticiGiris> {
               ),
               RaisedButton(
                 color: Colors.yellow,
-                child: Text('ENTER'),
+                child: Text('GİRİŞ'),
                 onPressed: () {
-                  Navigator.pushNamed(context, yoneticiIslem.routeName);
+                  Navigator.pushNamed(context, kullaniciIslem.routeName);
                 },
               )
             ],

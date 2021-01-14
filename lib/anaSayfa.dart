@@ -1,18 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:marketim/KullaniciGiris.dart';
-import 'package:marketim/KuryeGiris.dart';
-import 'package:marketim/YoneticiGiris.dart';
+import 'package:marketim/kullaniciSayfa.dart';
+import 'package:marketim/kuryeGiris.dart';
+import 'package:marketim/yoneticiGiris.dart';
 
-class GirisSayfa extends StatefulWidget {
+class anaSayfa extends StatefulWidget {
   static String routeName = '/';
 
-  GirisSayfa({Key key}) : super(key: key);
+  anaSayfa({Key key}) : super(key: key);
   @override
-  _GirisSayfaState createState() => new _GirisSayfaState();
+  _anaSayfaState createState() => new _anaSayfaState();
 }
 
-class _GirisSayfaState extends State<GirisSayfa> {
+class _anaSayfaState extends State<anaSayfa> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -27,19 +27,19 @@ class _GirisSayfaState extends State<GirisSayfa> {
               RaisedButton(
                 child: Text('YÖNETİCİ GİRİŞ'),
                 onPressed: () {
-                  Navigator.pushNamed(context, YoneticiGiris.routeName);
+                  Navigator.pushNamed(context, yoneticiGiris.routeName);
                 },
               ),
               RaisedButton(
                 child: Text('KULLANICI GİRİŞ'),
                 onPressed: () {
-                  Navigator.pushNamed(context, KullaniciGiris.routeName);
+                  Navigator.pushNamed(context, kullaniciSayfa.routeName);
                 },
               ),
               RaisedButton(
                 child: Text('KURYECİ GİRİŞ'),
                 onPressed: () {
-                  Navigator.pushNamed(context, KuryeGiris.routeName);
+                  Navigator.pushNamed(context, kuryeGiris.routeName);
                 },
               ),
             ],

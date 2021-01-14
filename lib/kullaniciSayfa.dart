@@ -1,16 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:marketim/loginUser.dart';
+import 'package:marketim/kullaniciGiris.dart';
 
-class KullaniciGiris extends StatefulWidget {
-  static String routeName = '/KullaniciGiris';
+class kullaniciSayfa extends StatefulWidget {
+  static String routeName = '/kullaniciSayfa';
 
-  KullaniciGiris({Key key}) : super(key: key);
+  kullaniciSayfa({Key key}) : super(key: key);
   @override
-  _KullaniciGirisState createState() => new _KullaniciGirisState();
+  _kullaniciSayfaState createState() => new _kullaniciSayfaState();
 }
 
-class _KullaniciGirisState extends State<KullaniciGiris> {
+class _kullaniciSayfaState extends State<kullaniciSayfa> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -22,20 +22,18 @@ class _KullaniciGirisState extends State<KullaniciGiris> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-
               RaisedButton(
                 child: Text('KAYIT OL'),
                 onPressed: () {
-               //  Navigator.pushNamed(context, y.routeName);
+                  //  Navigator.pushNamed(context, y.routeName);
                 },
               ),
               RaisedButton(
                 child: Text('GİRİŞ YAP'),
                 onPressed: () {
-                  Navigator.pushNamed(context, loginUser.routeName);
+                  Navigator.pushNamed(context, kullaniciGiris.routeName);
                 },
-              ),  
-          
+              ),
             ],
           ),
         ),

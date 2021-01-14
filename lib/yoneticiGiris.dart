@@ -1,40 +1,40 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:marketim/kuryeIslem.dart';
+import 'package:marketim/yoneticiIslem.dart';
 
-class KuryeGiris extends StatefulWidget {
-  static String routeName = '/KuryeGiris';
+class yoneticiGiris extends StatefulWidget {
+  static String routeName = '/yoneticiGiris';
 
-  KuryeGiris({Key key}) : super(key: key);
+  yoneticiGiris({Key key}) : super(key: key);
   @override
-  _KuryeGirisState createState() => new _KuryeGirisState();
+  _yoneticiGirisState createState() => new _yoneticiGirisState();
 }
 
-class _KuryeGirisState extends State<KuryeGiris> {
+class _yoneticiGirisState extends State<yoneticiGiris> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Kurye Giriş"),
+        title: new Text("Yönecici Giriş"),
       ),
-      body: Center (
+      body: Center(
         child: Container(
           padding: EdgeInsets.all(80.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Welcome',
-               // style: Theme.of(context).textTheme.headline1,
+                'Hoşgeldiniz',
+                // style: Theme.of(context).textTheme.headline1,
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  hintText: 'Username',
+                  hintText: 'Kullanıcı Adı',
                 ),
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  hintText: 'Password',
+                  hintText: 'Şifre',
                 ),
                 obscureText: true,
               ),
@@ -43,9 +43,9 @@ class _KuryeGirisState extends State<KuryeGiris> {
               ),
               RaisedButton(
                 color: Colors.yellow,
-                child: Text('ENTER'),
+                child: Text('GİRİŞ'),
                 onPressed: () {
-                  Navigator.pushNamed(context, kuryeIslem.routeName);
+                  Navigator.pushNamed(context, yoneticiIslem.routeName);
                 },
               )
             ],

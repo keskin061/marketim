@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:marketim/KullaniciGiris.dart';
-import 'package:marketim/KuryeGiris.dart';
-import 'package:marketim/YoneticiGiris.dart';
-import 'yoneticiIslem.dart';
-import 'kuryeIslem.dart';
-import 'kullaniciIslem.dart';
-import 'loginUser.dart';
-//import 'yeniKullanici.dart';
+import 'package:marketim/kullaniciSayfa.dart';
+import 'package:marketim/kuryeGiris.dart';
+import 'package:marketim/yoneticiGiris.dart';
 
-import 'GirisSayfa.dart';
+import 'anaSayfa.dart';
+import 'kullaniciGiris.dart';
+import 'kullaniciIslem.dart';
+import 'kuryeIslem.dart';
+import 'yoneticiIslem.dart';
 
 void main() {
   runApp(new MyApp());
@@ -26,16 +25,16 @@ class MyApp extends StatelessWidget {
         accentColor: const Color(0xFF64ffda),
         canvasColor: const Color(0xFF303030),
       ),
-      initialRoute: GirisSayfa.routeName,
+      initialRoute: anaSayfa.routeName,
       routes: {
-        GirisSayfa.routeName: (context) => GirisSayfa(),
-        YoneticiGiris.routeName: (context) => YoneticiGiris(),
-        KullaniciGiris.routeName: (context) => KullaniciGiris(),
-        KuryeGiris.routeName: (context) => KuryeGiris(),
+        anaSayfa.routeName: (context) => anaSayfa(),
+        yoneticiGiris.routeName: (context) => yoneticiGiris(),
+        kullaniciSayfa.routeName: (context) => kullaniciSayfa(),
+        kuryeGiris.routeName: (context) => kuryeGiris(),
         yoneticiIslem.routeName: (context) => yoneticiIslem(),
         kuryeIslem.routeName: (context) => kuryeIslem(),
         kullaniciIslem.routeName: (context) => kullaniciIslem(),
-        loginUser.routeName: (context) => loginUser(),
+        kullaniciGiris.routeName: (context) => kullaniciGiris(),
         //y.routeName: (context) => kuryeIslem(),
       },
     );

@@ -14,7 +14,7 @@ class _kullaniciIslemState extends State<kullaniciIslem> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Giriş'),
+        title: new Text('Kullanıcı İşlemleri'),
       ),
       body: Container(
         child: Center(
@@ -24,16 +24,15 @@ class _kullaniciIslemState extends State<kullaniciIslem> {
               RaisedButton(
                 child: Text('SİPARİŞ VER'),
                 onPressed: () {
-                 // Navigator.pushNamed(context, YoneticiGiris.routeName);
+                  // Navigator.pushNamed(context, YoneticiGiris.routeName);
                 },
               ),
               RaisedButton(
                 child: Text('KURYE İZLE'),
                 onPressed: () {
-                 // Navigator.pushNamed(context, KullaniciGiris.routeName);
+                  // Navigator.pushNamed(context, KullaniciGiris.routeName);
                 },
               ),
-       
             ],
           ),
         ),
