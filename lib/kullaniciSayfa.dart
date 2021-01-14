@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:marketim/kullaniciGiris.dart';
+import 'package:marketim/kullaniciKayit.dart';
 
 class kullaniciSayfa extends StatefulWidget {
   static String routeName = '/kullaniciSayfa';
@@ -15,7 +16,7 @@ class _kullaniciSayfaState extends State<kullaniciSayfa> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Kullanıcı Giriş"),
+        title: new Text("Kullanıcı Sayfa"),
       ),
       body: Container(
         child: Center(
@@ -25,7 +26,7 @@ class _kullaniciSayfaState extends State<kullaniciSayfa> {
               RaisedButton(
                 child: Text('KAYIT OL'),
                 onPressed: () {
-                  //  Navigator.pushNamed(context, y.routeName);
+                  Navigator.pushNamed(context, kullaniciKayit.routeName);
                 },
               ),
               RaisedButton(

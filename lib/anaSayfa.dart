@@ -25,19 +25,19 @@ class _anaSayfaState extends State<anaSayfa> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               RaisedButton(
-                child: Text('YÖNETİCİ GİRİŞ'),
+                child: Text('YÖNETİCİ'),
                 onPressed: () {
                   Navigator.pushNamed(context, yoneticiGiris.routeName);
                 },
               ),
               RaisedButton(
-                child: Text('KULLANICI GİRİŞ'),
+                child: Text('KULLANICI'),
                 onPressed: () {
                   Navigator.pushNamed(context, kullaniciSayfa.routeName);
                 },
               ),
               RaisedButton(
-                child: Text('KURYECİ GİRİŞ'),
+                child: Text('KURYECİ'),
                 onPressed: () {
                   Navigator.pushNamed(context, kuryeGiris.routeName);
                 },

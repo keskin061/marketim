@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marketim/kullaniciKayit.dart';
 import 'package:marketim/kullaniciSayfa.dart';
 import 'package:marketim/kuryeGiris.dart';
 import 'package:marketim/yoneticiGiris.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         kuryeIslem.routeName: (context) => kuryeIslem(),
         kullaniciIslem.routeName: (context) => kullaniciIslem(),
         kullaniciGiris.routeName: (context) => kullaniciGiris(),
-        //y.routeName: (context) => kuryeIslem(),
+        kullaniciKayit.routeName: (context) => kullaniciKayit(),
       },
     );
   }
