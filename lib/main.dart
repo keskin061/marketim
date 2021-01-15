@@ -1,17 +1,21 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:marketim/kullaniciKayit.dart';
-import 'package:marketim/kullaniciSayfa.dart';
-import 'package:marketim/kuryeGiris.dart';
-import 'package:marketim/yoneticiGiris.dart';
 
 import 'anaSayfa.dart';
 import 'kullaniciGiris.dart';
 import 'kullaniciIslem.dart';
+import 'kullaniciKayit.dart';
+import 'kullaniciSayfa.dart';
+import 'kuryeGiris.dart';
 import 'kuryeIslem.dart';
+import 'yoneticiGiris.dart';
 import 'yoneticiIslem.dart';
 
-void main() {
-  runApp(new MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

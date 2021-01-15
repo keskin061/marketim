@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:marketim/kullaniciIslem.dart';
+
+import 'kullaniciIslem.dart';
 
 class kullaniciGiris extends StatefulWidget {
   static String routeName = '/kullaniciGiris';
@@ -47,7 +48,7 @@ class _kullaniciGirisState extends State<kullaniciGiris> {
                 onPressed: () {
                   Navigator.pushNamed(context, kullaniciIslem.routeName);
                 },
-              )
+              ),
             ],
           ),
         ),
