@@ -11,6 +11,7 @@ import 'kuryeGiris.dart';
 import 'kuryeIslem.dart';
 import 'yoneticiGiris.dart';
 import 'yoneticiIslem.dart';
+import 'yoneticiUrunEkle.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         kullaniciIslem.routeName: (context) => kullaniciIslem(),
         kullaniciGiris.routeName: (context) => kullaniciGiris(),
         kullaniciKayit.routeName: (context) => kullaniciKayit(),
+        yoneticiUrunEkle.routeName: (context) => yoneticiUrunEkle(),
       },
     );
   }

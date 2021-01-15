@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:marketim/yoneticiUrunEkle.dart';
 
 class yoneticiIslem extends StatefulWidget {
   static String routeName = '/yoneticiIslem';
@@ -24,11 +25,35 @@ class _yoneticiIslemState extends State<yoneticiIslem> {
               RaisedButton(
                 child: Text('ÜRÜN EKLE'),
                 onPressed: () {
+                  Navigator.pushNamed(context, yoneticiUrunEkle.routeName);
+                },
+              ),
+              RaisedButton(
+                child: Text('ÜRÜN SİL'),
+                onPressed: () {
                   // Navigator.pushNamed(context, YoneticiGiris.routeName);
                 },
               ),
               RaisedButton(
-                child: Text('KURYE İŞLEMLERİ'),
+                child: Text('ÜRÜN DÜZENLE'),
+                onPressed: () {
+                  // Navigator.pushNamed(context, YoneticiGiris.routeName);
+                },
+              ),
+              RaisedButton(
+                child: Text('KURYE EKLE'),
+                onPressed: () {
+                  // Navigator.pushNamed(context, KullaniciGiris.routeName);
+                },
+              ),
+              RaisedButton(
+                child: Text('KURYE SİL'),
+                onPressed: () {
+                  // Navigator.pushNamed(context, KullaniciGiris.routeName);
+                },
+              ),
+              RaisedButton(
+                child: Text('KURYE DÜZENLE'),
                 onPressed: () {
                   // Navigator.pushNamed(context, KullaniciGiris.routeName);
                 },
@@ -46,7 +71,7 @@ class _yoneticiIslemState extends State<yoneticiIslem> {
                 },
               ),
               RaisedButton(
-                child: Text('KONUM'),
+                child: Text('KURYE KONUM'),
                 onPressed: () {
                   //Navigator.pushNamed(context, KullaniciGiris.routeName);
                 },

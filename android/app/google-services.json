@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1049078930903",
-    "project_id": "marketim-1bf89",
-    "storage_bucket": "marketim-1bf89.appspot.com"
+    "project_number": "927024862422",
+    "project_id": "marketim-dbedf",
+    "storage_bucket": "marketim-dbedf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1049078930903:android:cfabd59d08207dd33fbf92",
+        "mobilesdk_app_id": "1:927024862422:android:31c6aac851fb36018d6577",
         "android_client_info": {
           "package_name": "com.testo.marketim"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1049078930903-i329l5v1lvjkr2lgcmgofk15mtenaeq9.apps.googleusercontent.com",
+          "client_id": "927024862422-6b6le1p1olsev1c58s4rdl80gaclpv6u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA_PQKgiFZyTpP3uwcNTg90eoJzJIwoFmY"
+          "current_key": "AIzaSyA-KnLYVUUFXgkgilChwIPH4m94kYfmL60"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1049078930903-i329l5v1lvjkr2lgcmgofk15mtenaeq9.apps.googleusercontent.com",
+              "client_id": "927024862422-6b6le1p1olsev1c58s4rdl80gaclpv6u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
