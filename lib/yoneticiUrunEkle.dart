@@ -11,6 +11,15 @@ class yoneticiUrunEkle extends StatefulWidget {
 }
 
 class _yoneticiUrunEkleState extends State<yoneticiUrunEkle> {
+  TextEditingController urun = TextEditingController();
+
+  urunEkle() {
+    FirebaseFirestore.instance
+        .collection('urunler')
+        .doc(urun.text)
+        .set({'urunad': urun.text});
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -24,6 +33,7 @@ class _yoneticiUrunEkleState extends State<yoneticiUrunEkle> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextFormField(
+                controller: urun,
                 decoration: InputDecoration(
                   hintText: 'Ürün Adı',
                 ),
@@ -44,11 +54,4 @@ class _yoneticiUrunEkleState extends State<yoneticiUrunEkle> {
       ),
     );
   }
-}
-
-urunEkle() {
-  FirebaseFirestore.instance
-      .collection("urunler")
-      .doc("urun.text")
-      .set({'urunad': "urun.text"});
 }
